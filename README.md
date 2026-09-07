@@ -82,6 +82,7 @@ The multi-pole concept further extends this operation by allowing the next light
 * 🔌 Embedded control system
 * 🌱 Sustainable lighting approach
 
+---
 
  🔧 Hardware Components
 
@@ -98,7 +99,7 @@ The multi-pole concept further extends this operation by allowing the next light
 | Solar Charge Controller | Battery charging        |
 | 220Ω Resistor           | LED current limiting    |
 
-
+---
 
  📍 Prototype Pin Configuration
 
