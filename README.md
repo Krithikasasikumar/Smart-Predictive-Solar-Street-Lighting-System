@@ -51,14 +51,23 @@ The multi-pole version is designed so that information from one lighting zone ca
 ✨ Key Features
 
 ☀️ Solar-Powered Concept
+
 🔋 Battery Energy Storage
+
 💡 Adaptive LED Brightness
+
 🚶 PIR Motion Detection
+
 🌙 LDR Ambient Sensing
+
 🎛️ ESP32 Microcontroller Control
+
 🛣️ Predictive Multi-Pole Concept
+
 ⚡ Energy-Efficient Operation
+
 🔌 Embedded Logic System
+
 
 🔧 Hardware Components
 Component	Purpose
