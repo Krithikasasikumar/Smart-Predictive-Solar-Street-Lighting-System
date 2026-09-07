@@ -1,9 +1,10 @@
-🌞 Smart Predictive Solar Street Lighting System
+# 🌞 Smart Predictive Solar Street Lighting System
 
 > An ESP32-based solar street lighting prototype with adaptive brightness and a predictive multi-pole lighting concept.
 
+---
 
-📌 About the Project
+## 📌 About the Project
 
 Traditional street lights often remain at high brightness even when there is little or no traffic. This can result in unnecessary energy consumption.
 
@@ -13,8 +14,9 @@ The system uses an **ESP32 microcontroller** to control street-light brightness 
 
 The main concept is to create a **moving wave of illumination** along a road, where the upcoming lighting zone can be activated as movement progresses.
 
+---
 
- 🎯 Problem Statement
+## 🎯 Problem Statement
 
 Conventional street lights may consume energy continuously even when roads are empty.
 
@@ -29,7 +31,7 @@ This project aims to:
 
 ---
 
-💡 How It Works
+## 💡 How It Works
 
 The prototype consists of the following major components:
 
@@ -41,7 +43,7 @@ The prototype consists of the following major components:
 | **LED**        | Represents the street light           |
 | **MOSFET**     | Controls LED switching and brightness |
 
-Basic Operation
+### Basic Operation
 
 ```text
              🌙 Night / Low Ambient Light
@@ -57,7 +59,7 @@ Basic Operation
                       Timeout
                          ↓
                   💡 Low Brightness
-
+```
 
 During nighttime, the lights operate at a lower brightness level to conserve energy.
 
@@ -67,9 +69,9 @@ After the motion ends and the predefined timeout expires, the light returns to i
 
 The multi-pole concept further extends this operation by allowing the next lighting zone to be activated based on the direction of movement.
 
+---
 
-
- ✨ Key Features
+## ✨ Key Features
 
 * ☀️ Solar-powered lighting concept
 * 🔋 Battery-based energy storage
@@ -82,26 +84,26 @@ The multi-pole concept further extends this operation by allowing the next light
 * 🔌 Embedded control system
 * 🌱 Sustainable lighting approach
 
- ---
+---
 
- 🔧 Hardware Components
+## 🔧 Hardware Components
 
-| Component               | Purpose             |
-| ----------------------- | ----------------------- |
-| ESP32-WROOM-32          | Main controller         |
-| HC-SR501 PIR Sensor     | Motion detection        |
-| LDR + LM393 Module      | Ambient light detection |
-| LED                     | Street-light simulation |
-| IRLZ44N MOSFET          | LED switching/control   |
-| MT3608 Boost Converter  | Voltage boosting        |
-| 18650 Li-ion Battery    | Energy storage          |
-| Solar Panel             | Solar energy generation |
-| Solar Charge Controller | Battery charging        |
-| 220Ω Resistor           | LED current limiting    |
+| Component                   | Purpose                 |
+| --------------------------- | ----------------------- |
+| **ESP32-WROOM-32**          | Main controller         |
+| **HC-SR501 PIR Sensor**     | Motion detection        |
+| **LDR + LM393 Module**      | Ambient light detection |
+| **LED**                     | Street-light simulation |
+| **IRLZ44N MOSFET**          | LED switching/control   |
+| **MT3608 Boost Converter**  | Voltage boosting        |
+| **18650 Li-ion Battery**    | Energy storage          |
+| **Solar Panel**             | Solar energy generation |
+| **Solar Charge Controller** | Battery charging        |
+| **220Ω Resistor**           | LED current limiting    |
 
- ---
+---
 
- 📍 Prototype Pin Configuration
+## 📍 Prototype Pin Configuration
 
 | Component                | ESP32 Pin |
 | ------------------------ | --------- |
@@ -109,11 +111,11 @@ The multi-pole concept further extends this operation by allowing the next light
 | **LDR Sensor**           | GPIO 34   |
 | **LED / MOSFET Control** | GPIO 25   |
 
- ⚠️ Pin assignments may change in future hardware versions.
+> ⚠️ Pin assignments may change in future hardware versions.
 
+---
 
-
- ⚙️ Prototype Working
+## ⚙️ Prototype Working
 
 The prototype was developed using a **three-pole lighting setup controlled by a centralized ESP32**.
 
@@ -135,7 +137,7 @@ The demonstrated brightness behavior is:
             ~35% Brightness
 ```
 
- Working Principle
+### Working Principle
 
 1. The **LDR** checks the surrounding ambient light.
 2. During daylight, the street lights remain OFF.
@@ -147,9 +149,9 @@ The demonstrated brightness behavior is:
 
 The brightness levels and timeout duration can be modified in the Arduino code.
 
+---
 
-
-🔋 Solar Power Architecture
+## 🔋 Solar Power Architecture
 
 The solar power flow of the prototype can be represented as:
 
@@ -171,12 +173,15 @@ The solar panel provides energy to the charging system, which stores energy in t
 
 The stored energy is then supplied to the electronics and lighting system through the required power-conversion stages.
 
+---
 
-🧠 Predictive Multi-Pole Concept
+
+
+## 🧠 Predictive Multi-Pole Concept
 
 The major concept of this project is to coordinate multiple street-light poles according to the direction of movement.
 
- Three-Pole Concept
+### Three-Pole Concept
 
 ```text
        POLE 1          POLE 2          POLE 3
@@ -191,7 +196,11 @@ The major concept of this project is to coordinate multiple street-light poles a
 
 When movement is detected at one lighting zone, the next lighting zone can be prepared to provide illumination ahead of the moving person or vehicle.
 
- Future Version
+### Current Prototype
+
+The current prototype demonstrates the lighting-control concept using a **centralized ESP32**.
+
+### Future Version
 
 A future implementation can use:
 
@@ -203,8 +212,9 @@ A future implementation can use:
 
 This can create a **predictive wave of illumination** along the road.
 
+---
 
- 📊 Expected Benefits
+## 📊 Expected Benefits
 
 The proposed system can provide the following benefits:
 
@@ -217,9 +227,9 @@ The proposed system can provide the following benefits:
 * 📈 Scalable multi-pole architecture
 * 💰 Potential reduction in operating costs
 
+---
 
-
- 🚀 Future Improvements
+## 🚀 Future Improvements
 
 Future versions of the project could include:
 
@@ -236,8 +246,9 @@ Future versions of the project could include:
 * 📍 Direction and speed estimation
 * 📱 Mobile application for system monitoring
 
+---
 
- 🛣️ Potential Applications
+## 🛣️ Potential Applications
 
 The system can be adapted for:
 
@@ -251,44 +262,5 @@ The system can be adapted for:
 * ☀️ Solar-powered infrastructure
 * 🏕️ Public pathways and isolated areas
 
-
- 💻 Software & Tools
-
-* **Arduino IDE**
-* **Embedded C/C++**
-* **ESP32**
-* **Wokwi**
-* **GitHub**
-
-
-## 🔮 Project Development Roadmap
-
-```text
-Phase 1
-Basic LED Control
-      ↓
-Phase 2
-LDR + PIR Integration
-      ↓
-Phase 3
-Adaptive Brightness
-      ↓
-Phase 4
-Solar Power Integration
-      ↓
-Phase 5
-Three-Pole Prototype
-      ↓
-Phase 6
-Predictive Lighting Concept
-      ↓
-Phase 7
-Wireless Pole-to-Pole Communication
-      ↓
-Phase 8
-IoT + Advanced Prediction
-```
-
-
-
+---
 
