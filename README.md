@@ -27,7 +27,7 @@ This project aims to:
 * 🛣️ Develop a predictive lighting concept for multiple street-light poles
 * ⚡ Improve overall energy efficiency
 
-
+---
 
 💡 How It Works
 
