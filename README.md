@@ -10,7 +10,7 @@ Traditional street lights often remain at high brightness even when there is lit
 
 The **Smart Predictive Solar Street Lighting System** is designed to provide an energy-efficient and sustainable alternative using **solar power, motion detection, ambient-light sensing, and intelligent control**.
 
-![Project Overview]("p1.jpeg")
+![Project Overview](p1.jpeg)
 
 The system uses an **ESP32 microcontroller** to control street-light brightness according to the surrounding lighting conditions and detected movement.
 
