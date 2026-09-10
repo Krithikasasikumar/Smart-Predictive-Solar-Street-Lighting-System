@@ -45,6 +45,9 @@ The prototype consists of the following major components:
 | **LED**         | Represents the street light           |
 | **MOSFET**      | Controls LED switching and brightness |
 
+## Circuit diagram
+
+
 ### Basic Operation
 
 ```text
